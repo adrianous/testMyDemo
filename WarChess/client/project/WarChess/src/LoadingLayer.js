@@ -1,7 +1,6 @@
 /**
  * Created by yangyanfei on 15/5/23.
  */
-var ISTRIBE = 0;
 var LoadingLayer = BaseLayer.extend({
     _isLoaded : false,
     _isStart : false,
@@ -21,6 +20,7 @@ var LoadingLayer = BaseLayer.extend({
     completedAnimationSequenceNamed:function(animationName){
         if(animationName == "action_loaded"){
             this._isLoaded = true;
+            this._isStart = true;
 
         }
     },
@@ -114,7 +114,18 @@ var LoadingLayer = BaseLayer.extend({
 
     receiveStartMsg:function(event){
         var data = event.getUserData();
-        ISTRIBE = data.black;
+        if(data.black)
+        {
+            SF_INFO.teamIndex = 2;
+            OP_INFO.teamIndex = 1;
+        }
+        else
+        {
+            SF_INFO.teamIndex = 1;
+            OP_INFO.teamIndex = 2;
+        }
+
+
         this._isStart = true;
         cc.log("asdfasdfasdfaff");
     },

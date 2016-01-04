@@ -19,7 +19,7 @@
         //imageWidth = imageWidth * width/540;
         //imageHeight = imageHeight * height/960;
         var img = document.createElement("img");
-        img.setAttribute("src", "res/logo.png");
+        img.setAttribute("src", "res/p_f_00.png");
         img.style.position = "absolute";
 
         div.appendChild(img);

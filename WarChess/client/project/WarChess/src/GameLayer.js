@@ -8,6 +8,7 @@ var GameLayer = BaseLayer.extend({
         this._super();
         this.initMap();
 
+        cc.spriteFrameCache.addSpriteFrames(res_gaming.warChessPlist);
         var testChooseCardLayer = new ChooseCardLayer();
         this.addChild(testChooseCardLayer);
 
