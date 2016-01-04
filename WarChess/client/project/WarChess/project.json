@@ -1,0 +1,25 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : true,
+    "frameRate" : 60,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d","extensions"],
+
+    "jsList" : [
+        "src/Resource.js",
+        "src/GameInfo.js",
+        "src/BaseLayer.js",
+        "src/Network.js",
+        "src/LoadingLayer.js",
+        "src/GameLayer.js",
+        "src/MapLayer.js",
+        "src/ChooseCardLayer.js",
+        "src/ControlButton.js",
+        "src/protocols.js"
+    ]
+}

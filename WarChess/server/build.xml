@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project basedir="." default="jar" name="appserver2">
+	<property environment="env" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.7" />
+	<property name="source" value="1.7" />
+
+	<property name="table.dir" value="table" />
+	<property name="lib.dir" value="lib" />
+	<property name="src.dir" value="src" />
+	<property name="classes.dir" value="bin" />
+
+	<echo message="build.name: ${build.name}" />
+	<property name="output.dir" value="${build.name}" />
+	<property name="jarname" value="${build.name}.jar" />
+	<!-- 以下部分需要修改，主类的路径 -->
+	<property name="mainclass" value="goBang.Main" />
+	<!-- 以上部分需要修改，主类的路径 -->
+
+	<path id="server.classpath">
+		<fileset dir="lib/" includes="*.jar"/>
+	</path>
+	<target name="init">
+		<mkdir dir="bin" />
+		<copy includeemptydirs="false" todir="bin">
+			<fileset dir="src">
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="clean">
+		<delete dir="bin" />
+		<delete dir="${output.dir}"/>
+	</target>
+	<target depends="clean" name="cleanall" />
+	<target depends="build-subprojects,build-project" name="build" />
+	<target name="build-subprojects" />
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+			<src path="src" />
+			<classpath refid="server.classpath" />
+		</javac>
+	</target>
+	<target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects" />
+	<target name="AppServer">
+		<java classname="pony.AppServer" failonerror="true" fork="yes">
+			<classpath refid="server.classpath" />
+		</java>
+	</target>
+
+	<target name="jar" depends="build">
+		<copy todir="${output.dir}/lib">
+			<fileset dir="${lib.dir}" />
+		</copy>
+		
+		<!--
+		<copy todir="${output.dir}/table">
+            <fileset dir="${table.dir}" />
+        </copy>
+        -->
+
+		<!--Create a property containing all .jar files,  
+	        prefix lib/, and seperated with a space-->
+		<pathconvert property="mf.classpath" pathsep=" ">
+			<mapper>
+				<chainedmapper>
+					<!-- jar包文件只留文件名，去掉目录信息 -->
+					<flattenmapper />
+					<!-- add lib/ prefix -->
+					<globmapper from="*" to="lib/*" />
+				</chainedmapper>
+			</mapper>
+			<path refid="server.classpath" />
+		</pathconvert>
+
+		<!-- jar文件的输出路径 -->
+		<jar destfile="${output.dir}/${jarname}" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Main-class" value="${mainclass}" />
+				<attribute name="Class-Path" value="${mf.classpath}" />
+			</manifest>
+		</jar>
+	</target>
+	
+	<copy tofile="${output.dir}/pony.properties" file="pony_${build.mode}.properties"/>
+	<copy todir="${output.dir}" file="gameInfo.properties"/>
+    <copy todir="${output.dir}" file="log4j.xml"/>
+</project>
