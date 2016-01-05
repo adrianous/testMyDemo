@@ -2,11 +2,21 @@
  * Created by john on 16/1/4.
  */
 var ChooseCardLayer = BaseLayer.extend({
+    cardNum : 0,
+    isLeft : false,
     ctor:function(){
         this._super();
         this.loadCCB("ChooseCampLayer",res_gaming.chooseCard);
         cc.eventManager.addCustomListener(Response.msgId_chooseCard,this.receiveChooseCard.bind(this));
 
+    },
+
+    completedAnimationSequenceNamed:function(animationName){
+        if(animationName == "leftUp" || animationName == "rightUp")
+        {
+            this.getParent().initData();
+            this.removeFromParent();
+        }
     },
 
     chooseCamp:function(sender)
@@ -23,14 +33,18 @@ var ChooseCardLayer = BaseLayer.extend({
         var chooseCardMsg = new ChooseCard();
         if(sender.getTag() == 1)
         {
+            this.card1MenuItem.setVisible(false);
+
             //this.receiveChooseCard(true,false);
-            chooseCardMsg.content.isLeft = true;
+            chooseCardMsg.content.left = true;
             //this.card1.runAction(fanpai1);
             //this.cardAlliance.runAction(drawCardAnimation1);
         }
         else
         {
-            chooseCardMsg.content.isLeft = false;
+            this.card2MenuItem.setVisible(false);
+
+            chooseCardMsg.content.left = false;
             //this.card2.runAction(fanpai2);
             //this.cardTribe.runAction(drawCardAnimation2);
         }
@@ -40,7 +54,7 @@ var ChooseCardLayer = BaseLayer.extend({
 
 
     receiveChooseCard:function(event){
-    //receiveChooseCard:function(isLeft,isMyself){
+        //receiveChooseCard:function(isLeft,isMyself){
         var data = event.getUserData();
         var isLeft = data.left;
         var isMyself = data.myself;
@@ -50,9 +64,12 @@ var ChooseCardLayer = BaseLayer.extend({
 
         if(isLeft)
         {
+            this.cardNum++;
+            this.card1MenuItem.setVisible(false);
             if(isMyself)
             {
-                if(SF_INFO.teamIndex == 1)
+                this.isLeft = true;
+                if(SF_INFO.teamIndex == TEAMTYPE.ALLIANCE)
                 {
                     this.card1.setSpriteFrame(cc.spriteFrameCache.getSpriteFrame("card_alliance.png"));
                 }
@@ -63,7 +80,7 @@ var ChooseCardLayer = BaseLayer.extend({
             }
             else
             {
-                if(OP_INFO.teamIndex == 1)
+                if(OP_INFO.teamIndex == TEAMTYPE.ALLIANCE)
                 {
                     this.card1.setSpriteFrame(cc.spriteFrameCache.getSpriteFrame("card_alliance.png"));
                 }
@@ -77,9 +94,12 @@ var ChooseCardLayer = BaseLayer.extend({
         }
         else
         {
+            this.cardNum++;
+            this.card2MenuItem.setVisible(false);
             if(isMyself)
             {
-                if(SF_INFO.teamIndex == 1)
+                this.isLeft = false;
+                if(SF_INFO.teamIndex == TEAMTYPE.ALLIANCE)
                 {
                     this.card2.setSpriteFrame(cc.spriteFrameCache.getSpriteFrame("card_alliance.png"));
                 }
@@ -90,7 +110,7 @@ var ChooseCardLayer = BaseLayer.extend({
             }
             else
             {
-                if(OP_INFO.teamIndex == 1)
+                if(OP_INFO.teamIndex == TEAMTYPE.ALLIANCE)
                 {
                     this.card2.setSpriteFrame(cc.spriteFrameCache.getSpriteFrame("card_alliance.png"));
                 }
@@ -102,5 +122,23 @@ var ChooseCardLayer = BaseLayer.extend({
             this.cardBack2.runAction(fanpai1);
             this.card2.runAction(drawCardAnimation);
         }
+
+        if(this.cardNum == 2)
+        {
+           this.scheduleOnce(this.playAnimation,1);
+        }
+    },
+
+    playAnimation:function()
+    {
+        if(this.isLeft)
+        {
+            this.rootNode.animationManager.runAnimationsForSequenceNamed("leftUp");
+        }
+        else
+        {
+            this.rootNode.animationManager.runAnimationsForSequenceNamed("rightUp");
+        }
+
     }
 });

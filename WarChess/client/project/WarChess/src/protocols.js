@@ -58,7 +58,7 @@ var ChooseCard = function(){
         gameId : global_gameId,
         roomId : global_roomId,
         sessionKey : global_sessionKey,
-        isLeft : null
+        left : null
     }
 };
 

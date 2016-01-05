@@ -4,27 +4,34 @@
 
 var GameLayer = BaseLayer.extend({
     _mapLayer : null,
+    _mainGameLayer : null,
     ctor:function(){
         this._super();
+
+
+
+
+        //cc.spriteFrameCache.addSpriteFrames(res_gaming.warChessPlist);
+        //var testChooseCardLayer = new ChooseCardLayer();
+        //this.addChild(testChooseCardLayer);
+
+        var statusLayer = new StatusLayer();
+        this._mainGameLayer = new MainGameLayer();
+
+        this.addChild(this._mainGameLayer);
+        this._mainGameLayer.addChild(statusLayer);
+
+        SF_INFO.initLayout();
+        OP_INFO.initLayout();
+
         this.initMap();
-
-        cc.spriteFrameCache.addSpriteFrames(res_gaming.warChessPlist);
-        var testChooseCardLayer = new ChooseCardLayer();
-        this.addChild(testChooseCardLayer);
-
-
-
     },
     initMap:function(){
         this._mapLayer = new MapLayer();
-        this.addChild(this._mapLayer);
-
+        this._mainGameLayer.addChild(this._mapLayer);
     },
-    initControlButton:function(){//根据地图添加移动和攻击按钮
-
-    },
-    showControlButton:function(role){//根据英雄(小兵)来显示移动和攻击按钮
-
+    initData:function(){
+        this._mapLayer.initData();
     }
 
 });

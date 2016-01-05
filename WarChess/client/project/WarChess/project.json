@@ -13,13 +13,18 @@
     "jsList" : [
         "src/Resource.js",
         "src/GameInfo.js",
+        "src/GameBaseData.js",
         "src/BaseLayer.js",
+        "src/BaseRole.js",
         "src/Network.js",
         "src/LoadingLayer.js",
         "src/GameLayer.js",
         "src/MapLayer.js",
         "src/ChooseCardLayer.js",
         "src/ControlButton.js",
-        "src/protocols.js"
+        "src/protocols.js",
+        "src/RoleSprite.js",
+        "src/StatusLayer.js",
+        "src/MainGameLayer.js"
     ]
 }
