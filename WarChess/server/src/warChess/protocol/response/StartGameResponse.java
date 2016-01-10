@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Response( msgId = MessagetIds.RESPONSE_START_GAME)
 public class StartGameResponse extends BasicResponse{
 	@Required
-    private boolean isBlack;
+    private int teamType;
 
 	@Required
     private boolean isMyTurn;
@@ -20,11 +20,12 @@ public class StartGameResponse extends BasicResponse{
 
 
 	
-	public boolean isBlack() {
-		return isBlack;
+
+	public int getTeamType() {
+		return teamType;
 	}
-	public void setBlack(boolean isBlack) {
-		this.isBlack = isBlack;
+	public void setTeamType(int teamType) {
+		this.teamType = teamType;
 	}
 	public boolean isMyTurn() {
 		return isMyTurn;
@@ -33,14 +34,13 @@ public class StartGameResponse extends BasicResponse{
 		this.isMyTurn = isMyTurn;
 	}
 	public StartGameResponse(){}
-    public StartGameResponse(final boolean _isBlack){
-        this.isBlack = _isBlack;
-        this.isMyTurn = _isBlack;
+    public StartGameResponse(final int _teamType){
+        this.teamType = _teamType;
     }
 
 	@Override
 	public String toString() {
-		return "StartGameResponse [isBlack=" + isBlack + ", isMyTurn=" + isMyTurn
+		return "StartGameResponse [_iteamType=" + teamType + ", isMyTurn=" + isMyTurn
 				+ "]";
 	}
 

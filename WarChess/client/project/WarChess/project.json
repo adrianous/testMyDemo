@@ -25,6 +25,11 @@
         "src/protocols.js",
         "src/RoleSprite.js",
         "src/StatusLayer.js",
-        "src/MainGameLayer.js"
+        "src/MainGameLayer.js",
+        "src/BattleSkill.js",
+        "src/PointShow.js",
+        "src/PointsShowLayer.js",
+        "src/DamageShowLayer.js",
+        "src/OverLayer.js"
     ]
 }

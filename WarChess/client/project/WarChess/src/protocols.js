@@ -10,8 +10,8 @@ var RequestMsgId = {
     msgId_emoji : 102,
     msgId_refight : 103,
     msgId_endRound : 104,
-    msgId_retract : 105,
-    msgId_draw : 106,
+    msgId_move : 105,
+    msgId_attack : 106,
     msgId_giveup : 107,
     msgId_RetractEnsure: 108,
     msgId_drawEnsure : 109,
@@ -29,9 +29,9 @@ var Response = {
     msgId_refight : 209,
     msgId_oneExit : 210,
     msgId_startRound : 211,
-    msgId_retract :212,
-    msgId_draw : 213,
-    msgId_drawEnsure : 214,
+    msgId_move :212,
+    msgId_endRound : 213,
+    msgId_attack : 214,
     msgId_giveup : 215,
     msgId_retractEnsure : 216,
     msgId_opReady : 217,
@@ -54,10 +54,6 @@ var EnterMsg = function(){
 var ChooseCard = function(){
     this.msgId=RequestMsgId.msgId_chooseCard;
     this.content={
-        userId : global_userId,
-        gameId : global_gameId,
-        roomId : global_roomId,
-        sessionKey : global_sessionKey,
         left : null
     }
 };
@@ -66,10 +62,7 @@ var ChooseCard = function(){
 var EmojiMsg = function(){
     this.msgId=RequestMsgId.msgId_emoji;
     this.content={
-        userId : global_userId,
-        gameId : global_gameId,
-        roomId : global_roomId,
-        sessionKey : global_sessionKey,
+
         index : 0
     }
 };
@@ -77,58 +70,42 @@ var EmojiMsg = function(){
 var RefightMsg = function(){
     this.msgId = RequestMsgId.msgId_refight;
     this.content = {
-        userId : global_userId,
-        gameId : global_gameId,
-        roomId : global_roomId,
-        sessionKey : global_sessionKey
+
     }
 };
 
-
-
-
-var DrawMsg = function()
+var AttackMsg = function()
 {
-    this.msgId = RequestMsgId.msgId_draw;
+    this.msgId = RequestMsgId.msgId_attack;
     this.content = {
-        userId : global_userId,
-        gameId : global_gameId,
-        roomId : global_roomId,
-        sessionKey : global_sessionKey
+        attackTag:0,
+        damage:0,
+        attackedTag:0
     }
 };
 
-
-var TestMsg = function()
+var MoveMsg = function()
 {
-    this.msgId = RequestMsgId.msgId_test;
+    this.msgId = RequestMsgId.msgId_move;
     this.content = {
-        userId : global_userId,
-        gameId : global_gameId,
-        roomId : global_roomId,
-        sessionKey : global_sessionKey,
-        count:0
+        tag:null,
+        movePoints:null
     }
 };
 
-var RetractMsg = function()
+var EndRoundMsg = function()
 {
-    this.msgId = RequestMsgId.msgId_retract;
+    this.msgId = RequestMsgId.msgId_endRound;
     this.content = {
-        userId : global_userId,
-        gameId : global_gameId,
-        roomId : global_roomId,
-        sessionKey : global_sessionKey
+
     }
 };
+
 var GiveupMsg = function()
 {
     this.msgId = RequestMsgId.msgId_giveup;
     this.content = {
-        userId : global_userId,
-        gameId : global_gameId,
-        roomId : global_roomId,
-        sessionKey : global_sessionKey
+
     }
 };
 
@@ -136,10 +113,7 @@ var DrawEnsureMsg = function()
 {
     this.msgId = RequestMsgId.msgId_drawEnsure;
     this.content = {
-        userId : global_userId,
-        gameId : global_gameId,
-        roomId : global_roomId,
-        sessionKey : global_sessionKey,
+
         isSure : null
     }
 };
@@ -148,9 +122,6 @@ var RetractEnsureMsg = function()
 {
     this.msgId = RequestMsgId.msgId_RetractEnsure;
     this.content = {
-        userId : global_userId,
-        gameId : global_gameId,
-        roomId : global_roomId,
-        sessionKey : global_sessionKey
+
     }
 };

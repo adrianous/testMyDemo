@@ -23,7 +23,12 @@ var res_gaming = {
     role_soldier_alliance:"res/Role_SOLDIER_ALLIANCE.ccbi",
 
     mainGameLayer : "res/MainGameLayer.ccbi",
-    statusBarLayer : "res/StatusBarLayer.ccbi"
+    statusBarLayer : "res/StatusBarLayer.ccbi",
+    Point:"res/Point.ccbi",
+    PointsLayerAlliance :"res/PointsLayerAlliance.ccbi",
+    PointsLayerTribe :"res/PointsLayerTribe.ccbi",
+    OverLayer:"res/OverLayer.ccbi",
+    damageShow:"res/DamageShow.ccbi"
 
 };
 

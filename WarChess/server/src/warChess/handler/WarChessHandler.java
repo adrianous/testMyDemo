@@ -1,20 +1,22 @@
 package warChess.handler;
 
 import game.PlayerState;
-import warChess.protocol.request.DrawEnsureRequest;
-import warChess.protocol.request.DrawRequest;
+import warChess.protocol.request.ChooseCardRequest;
+import warChess.protocol.request.EndRoundRequest;
+import warChess.protocol.request.MoveRequest;
 import warChess.protocol.request.GiveupRequest;
 import warChess.protocol.request.ReFightRequest;
 import warChess.protocol.request.RetractEnsureRequest;
-import warChess.protocol.request.RetractRequest;
-import warChess.protocol.response.DrawEnsureResponse;
-import warChess.protocol.response.DrawResponse;
+import warChess.protocol.request.AttackRequest;
+import warChess.protocol.response.ChooseCardResponse;
+import warChess.protocol.response.EndRoundResponse;
 import warChess.protocol.response.GiveupResponse;
 import warChess.protocol.response.OpReadyResponse;
 import warChess.protocol.response.ReFightResponse;
 import warChess.protocol.response.ResultResponse;
-import warChess.protocol.response.RetractEnsureResponse;
-import warChess.protocol.response.RetractResponse;
+import warChess.protocol.response.MoveResponse;
+import warChess.protocol.response.AttackResponse;
+import warChess.protocol.response.StartRoundResponse;
 import gs.core.basic.RoomManager;
 import gs.core.handler.AbstractLogicHandler;
 import gs.core.protocol.BasicRequest;
@@ -42,9 +44,12 @@ public class WarChessHandler extends AbstractLogicHandler {
 	public void handleRequest(BasicRequest request, IoSession session) {
 		// TODO Auto-generated method stub
 
-		WarChessRoom room = (WarChessRoom) RoomManager.getRoom(request.getRoomId());// 拿到当前的room
+		final String roomId = (String) session.getAttribute("roomId");
+		final String userId = (String) session.getAttribute("userId");
+		
+		WarChessRoom room = (WarChessRoom) RoomManager.getRoom(roomId);// 拿到当前的room
 																			// 可以发送广播
-		String currUserId = request.getUserId();
+		String currUserId = userId;
 		String anotherUserId = room.getAnotherId(currUserId);
 
 		if (currUserId == null || anotherUserId == null)
@@ -72,14 +77,86 @@ public class WarChessHandler extends AbstractLogicHandler {
 			{
 				room.sendMessage(anotherUserId, new OpReadyResponse());
 			}
-		} else if (request instanceof DrawRequest) {
-			room.drawUsrId = currUserId;
-			room.addTimer(10500, room.drawId);
-			room.sendMessage(anotherUserId, new DrawResponse());
-		} else if (request instanceof RetractRequest) {
-			room.retractUsrId = currUserId;
-			room.addTimer(10500, room.retractId);
-			room.sendMessage(anotherUserId, new RetractResponse());
+			
+		} else if (request instanceof ChooseCardRequest) {
+			
+			boolean isLeft = ((ChooseCardRequest)request).isLeft();
+			boolean isLeglle = true;
+			if(isLeft)
+			{
+				if(anotherPlayer.chooseCard == 1)
+				{
+					isLeglle = false;
+				}
+				else
+				{
+					currPlayer.chooseCard = 1;
+				}
+			}
+			else
+			{
+				if(anotherPlayer.chooseCard == 2)
+				{
+					isLeglle = false;
+				}
+				else
+				{
+					currPlayer.chooseCard = 2;
+				}
+			}
+			
+			if(isLeglle)
+			{
+				
+				ChooseCardResponse chooseCardResponseCurr = new ChooseCardResponse(isLeft,true);
+				ChooseCardResponse chooseCardResponseOp = new ChooseCardResponse(isLeft,false);
+				
+				room.sendMessage(currUserId, chooseCardResponseCurr);
+				room.sendMessage(anotherUserId, chooseCardResponseOp);
+			}
+//			if(currPlayer.chooseCard != 0 && currPlayer.chooseCard != 0)
+//			{
+//				StartRoundResponse startRound = new StartRoundResponse();
+//				room.broadcast(startRound);
+//			}
+			room.addRoundTimer();
+		} else if (request instanceof MoveRequest) {
+			if(currPlayer.isMyTurn())
+			{
+				MoveRequest moveRequest = (MoveRequest)request;
+				MoveResponse moveResponse = new MoveResponse(moveRequest.getTag(),moveRequest.getMovePoints());
+				room.broadcast(moveResponse);
+			
+			}
+		} 
+		
+		else if (request instanceof AttackRequest) {
+			
+			if(currPlayer.isMyTurn())
+			{
+				AttackRequest attackRequest = (AttackRequest)request;
+				AttackResponse attackResponse = new AttackResponse(attackRequest.getAttackTag(),attackRequest.getDamage(),attackRequest.getAttackedTag());
+				room.broadcast(attackResponse);
+			}
+		} 
+		 
+		else if (request instanceof EndRoundRequest) {
+			
+			if(currPlayer.isMyTurn())
+			{
+				currPlayer.setMyTurn(false);
+				anotherPlayer.setMyTurn(true);
+				
+				EndRoundResponse endRoundRes = new EndRoundResponse();
+				room.sendMessage(currUserId, endRoundRes);
+				
+				
+				StartRoundResponse startRoundRes = new StartRoundResponse();
+				room.sendMessage(anotherUserId, startRoundRes);
+				
+				room.stopRoundTimer();
+				room.addRoundTimer();
+			}
 		} 
 	}
 

@@ -21,7 +21,8 @@ var ChooseCardLayer = BaseLayer.extend({
 
     chooseCamp:function(sender)
     {
-        this.ChooseMenu.setVisible(false);
+
+        //this.ChooseMenu.setVisible(false);
         var fanpai1 = new cc.orbitCamera(0.5,1,0,0,90,0,0);
         var fanpai2 = new cc.orbitCamera(0.5,1,0,0,90,0,0);
 
@@ -51,7 +52,6 @@ var ChooseCardLayer = BaseLayer.extend({
         global_network.sendMessage(chooseCardMsg);
 
     },
-
 
     receiveChooseCard:function(event){
         //receiveChooseCard:function(isLeft,isMyself){

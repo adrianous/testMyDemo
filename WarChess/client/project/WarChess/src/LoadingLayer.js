@@ -24,6 +24,7 @@ var LoadingLayer = BaseLayer.extend({
 
         }
     },
+
     onDidLoadFromCCB:function(ccbFileName){
         this._stencil = new cc.Sprite("#ui_loading_b_01.png");
         this._stencil.setScaleX(0);
@@ -45,6 +46,7 @@ var LoadingLayer = BaseLayer.extend({
         cc.eventManager.addCustomListener(Response.msgId_exit,this.receiveExitMsg.bind(this));
         this.addDial();
     },
+    
     onExit:function(){
         this._super();
         cc.eventManager.removeCustomListeners(Response.msgId_connect);
@@ -73,7 +75,7 @@ var LoadingLayer = BaseLayer.extend({
         var jsonObj = null;
         var isTest = true;
         if(isTest){
-            var str = '{"roomId":"room_1","gameId":"WARCHESS_DEBUG","userId":"userId2","sessionKey":1,"gameServerIP":"ws://192.168.0.203:10151"}';
+            var str = '{"roomId":"room_1","gameId":"WARCHESS_DEBUG","userId":"userId1","sessionKey":1,"gameServerIP":"ws://192.168.0.203:10151"}';
             jsonObj = JSON.parse(str);
         }else
         {
@@ -96,6 +98,7 @@ var LoadingLayer = BaseLayer.extend({
         global_network = new NetWork(global_serverUrl);
         global_network.openConnect();
     },
+
     receiveConnectMsg:function(event){
         var data = event.getUserData();
         var players = data.players;
@@ -114,7 +117,7 @@ var LoadingLayer = BaseLayer.extend({
 
     receiveStartMsg:function(event){
         var data = event.getUserData();
-
+        SF_INFO.isMyTurn = data.myTurn;
         SF_INFO.teamIndex = data.teamType;
         OP_INFO.teamIndex = 3-data.teamType;
 

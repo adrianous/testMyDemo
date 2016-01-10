@@ -4,27 +4,14 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>background.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,2},{960,540}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{960,540}}</string>
-                <key>sourceSize</key>
-                <string>{960,540}</string>
-            </dict>
             <key>buff/ui_buff_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,132},{25,24}}</string>
+                <string>{{964,123},{25,24}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{25,24}}</string>
                 <key>sourceSize</key>
@@ -33,11 +20,11 @@
             <key>buff/ui_buff_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{996,130},{25,24}}</string>
+                <string>{{938,123},{25,24}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{25,24}}</string>
                 <key>sourceSize</key>
@@ -46,24 +33,50 @@
             <key>buff/ui_buff_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{996,104},{25,24}}</string>
+                <string>{{912,123},{25,24}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{25,24}}</string>
                 <key>sourceSize</key>
                 <string>{25,24}</string>
             </dict>
-            <key>card_alliance.png</key>
+            <key>butten_over_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{236,544},{232,340}}</string>
+                <string>{{344,654},{183,78}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{183,78}}</string>
+                <key>sourceSize</key>
+                <string>{183,78}</string>
+            </dict>
+            <key>butten_over_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{344,574},{183,78}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{183,78}}</string>
+                <key>sourceSize</key>
+                <string>{183,78}</string>
+            </dict>
+            <key>card_alliance.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{538,354},{232,340}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{232,340}}</string>
                 <key>sourceSize</key>
@@ -72,11 +85,11 @@
             <key>card_back.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{470,544},{231,340}}</string>
+                <string>{{2,574},{231,340}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{231,340}}</string>
                 <key>sourceSize</key>
@@ -85,20 +98,514 @@
             <key>card_tribe.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,544},{232,340}}</string>
+                <string>{{538,120},{232,340}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{232,340}}</string>
                 <key>sourceSize</key>
                 <string>{232,340}</string>
             </dict>
+            <key>over/button_again_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{529,663},{291,73}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{291,73}}</string>
+                <key>sourceSize</key>
+                <string>{291,73}</string>
+            </dict>
+            <key>over/button_again_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{529,588},{291,73}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{291,73}}</string>
+                <key>sourceSize</key>
+                <string>{291,73}</string>
+            </dict>
+            <key>over/button_provoke_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,1033},{208,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{208,68}}</string>
+                <key>sourceSize</key>
+                <string>{208,68}</string>
+            </dict>
+            <key>over/button_provoke_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,963},{208,68}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{208,68}}</string>
+                <key>sourceSize</key>
+                <string>{208,68}</string>
+            </dict>
+            <key>over/lost_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,191},{534,187}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{534,187}}</string>
+                <key>sourceSize</key>
+                <string>{534,187}</string>
+            </dict>
+            <key>over/lost_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{880,415},{291,140}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{291,140}}</string>
+                <key>sourceSize</key>
+                <string>{291,140}</string>
+            </dict>
+            <key>over/lost_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{344,734},{274,133}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{274,133}}</string>
+                <key>sourceSize</key>
+                <string>{274,133}</string>
+            </dict>
+            <key>over/lost_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{212,1090},{70,74}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{70,74}}</string>
+                <key>sourceSize</key>
+                <string>{70,74}</string>
+            </dict>
+            <key>over/ui_head.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,902},{84,86}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{84,86}}</string>
+                <key>sourceSize</key>
+                <string>{84,86}</string>
+            </dict>
+            <key>over/ui_head_alliance.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{212,990},{98,119}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{98,119}}</string>
+                <key>sourceSize</key>
+                <string>{98,119}</string>
+            </dict>
+            <key>over/ui_head_leave.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,1009},{84,84}}</string>
+                <key>offset</key>
+                <string>{0,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,2},{84,84}}</string>
+                <key>sourceSize</key>
+                <string>{84,86}</string>
+            </dict>
+            <key>over/ui_head_orz.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{912,2},{98,119}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{98,119}}</string>
+                <key>sourceSize</key>
+                <string>{98,119}</string>
+            </dict>
+            <key>over/ui_head_ready.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{570,989},{84,84}}</string>
+                <key>offset</key>
+                <string>{0,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,2},{84,84}}</string>
+                <key>sourceSize</key>
+                <string>{84,86}</string>
+            </dict>
+            <key>over/ui_talk_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{822,690},{41,35}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{41,35}}</string>
+                <key>sourceSize</key>
+                <string>{41,35}</string>
+            </dict>
+            <key>over/ui_talk_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,885},{253,76}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{253,76}}</string>
+                <key>sourceSize</key>
+                <string>{253,76}</string>
+            </dict>
+            <key>over/ui_talk_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,807},{253,76}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{253,76}}</string>
+                <key>sourceSize</key>
+                <string>{253,76}</string>
+            </dict>
+            <key>over/win_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{534,187}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{534,187}}</string>
+                <key>sourceSize</key>
+                <string>{534,187}</string>
+            </dict>
+            <key>over/win_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{880,154},{259,141}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{259,141}}</string>
+                <key>sourceSize</key>
+                <string>{259,141}</string>
+            </dict>
+            <key>over/win_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{865,708},{274,133}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{274,133}}</string>
+                <key>sourceSize</key>
+                <string>{274,133}</string>
+            </dict>
+            <key>over/win_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{663,922},{89,70}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{89,70}}</string>
+                <key>sourceSize</key>
+                <string>{89,70}</string>
+            </dict>
+            <key>power_caes_human.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{538,2},{59,372}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{59,372}}</string>
+                <key>sourceSize</key>
+                <string>{59,372}</string>
+            </dict>
+            <key>power_caes_orc.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{538,63},{55,372}}</string>
+                <key>offset</key>
+                <string>{-2,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{55,372}}</string>
+                <key>sourceSize</key>
+                <string>{59,372}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{762,920},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{673,738},{91,93}}</string>
+                <key>offset</key>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,2},{85,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/aizilieren/c_lm_04lr_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
             <key>role/aizilieren/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -108,36 +615,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/aizilieren/skill/skill_1.png</key>
+            <key>role/anyenan/c_lm_01mt_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/aizilieren/skill/skill_2.png</key>
+            <key>role/anyenan/c_lm_01mt_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/anyenan/c_lm_01mt_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/anyenan/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -147,36 +836,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/anyenan/skill/skill_1.png</key>
+            <key>role/daizei/c_bl_02dz_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/anyenan/skill/skill_2.png</key>
+            <key>role/daizei/c_bl_02dz_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daizei/c_bl_02dz_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/daizei/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,2},{52,49}}</string>
+                <string>{{822,588},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -186,36 +1057,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/daizei/skill/skill_1.png</key>
+            <key>role/daxiaojie/c_lm_03sq_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/daizei/skill/skill_2.png</key>
+            <key>role/daxiaojie/c_lm_03sq_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/daxiaojie/c_lm_03sq_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/daxiaojie/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -225,36 +1278,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/daxiaojie/skill/skill_1.png</key>
+            <key>role/fangzhuan/c_lm_05fs_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/daxiaojie/skill/skill_2.png</key>
+            <key>role/fangzhuan/c_lm_05fs_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fangzhuan/c_lm_05fs_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/fangzhuan/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -264,36 +1499,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/fangzhuan/skill/skill_1.png</key>
+            <key>role/fasi/c_bl_05fs_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/fangzhuan/skill/skill_2.png</key>
+            <key>role/fasi/c_bl_05fs_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/fasi/c_bl_05fs_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/fasi/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -303,36 +1720,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/fasi/skill/skill_1.png</key>
+            <key>role/lieren/c_bl_04lr_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/fasi/skill/skill_2.png</key>
+            <key>role/lieren/c_bl_04lr_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/lieren/c_bl_04lr_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/lieren/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -342,36 +1941,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/lieren/skill/skill_1.png</key>
+            <key>role/luoyan/c_lm_02dz_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/lieren/skill/skill_2.png</key>
+            <key>role/luoyan/c_lm_02dz_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/luoyan/c_lm_02dz_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/luoyan/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -381,36 +2162,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/luoyan/skill/skill_1.png</key>
+            <key>role/mt/c_bl_01mt_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/luoyan/skill/skill_2.png</key>
+            <key>role/mt/c_bl_01mt_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mt/c_bl_01mt_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/mt/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -420,36 +2383,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/mt/skill/skill_1.png</key>
+            <key>role/mushi/c_bl_03ms_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/mt/skill/skill_2.png</key>
+            <key>role/mushi/c_bl_03ms_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/mushi/c_bl_03ms_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/mushi/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -459,36 +2604,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/mushi/skill/skill_1.png</key>
+            <key>role/soldier_alliance/c_lm_00xb_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/mushi/skill/skill_2.png</key>
+            <key>role/soldier_alliance/c_lm_00xb_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_alliance/c_lm_00xb_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/soldier_alliance/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -498,36 +2825,218 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/soldier_alliance/skill/skill_1.png</key>
+            <key>role/soldier_tribe/c_bl_00xb_attack_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{762,920},{89,89}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-3}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{20,6},{89,89}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
             </dict>
-            <key>role/soldier_alliance/skill/skill_2.png</key>
+            <key>role/soldier_tribe/c_bl_00xb_attack_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{673,738},{91,93}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-11,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{4,2},{91,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_attack_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{257,807},{85,93}}</string>
+                <key>offset</key>
+                <string>{-18,-1}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{81,72}}</string>
+                <string>{{0,2},{85,93}}</string>
                 <key>sourceSize</key>
-                <string>{81,72}</string>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_attack_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,738},{87,95}}</string>
+                <key>offset</key>
+                <string>{17,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,0},{87,95}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_dead_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_dead_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,738},{95,73}}</string>
+                <key>offset</key>
+                <string>{-13,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,21},{95,73}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_standby_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_standby_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{572,898},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_under_attack_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,918},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_under_attack_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{576,813},{83,93}}</string>
+                <key>offset</key>
+                <string>{1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,2},{83,93}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_walk_00.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{671,831},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_walk_01.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_walk_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_walk_03.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,829},{89,89}}</string>
+                <key>offset</key>
+                <string>{4,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{20,6},{89,89}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_walk_04.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{479,827},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,3},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
+            </dict>
+            <key>role/soldier_tribe/c_bl_00xb_walk_05.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{768,738},{89,91}}</string>
+                <key>offset</key>
+                <string>{4,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,4},{89,91}}</string>
+                <key>sourceSize</key>
+                <string>{121,95}</string>
             </dict>
             <key>role/soldier_tribe/head.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,53},{52,49}}</string>
+                <string>{{822,639},{52,49}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -537,10 +3046,10 @@
                 <key>sourceSize</key>
                 <string>{52,49}</string>
             </dict>
-            <key>role/soldier_tribe/skill/skill_1.png</key>
+            <key>skills/skill1/icon.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{333,1010},{81,72}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -550,10 +3059,179 @@
                 <key>sourceSize</key>
                 <string>{81,72}</string>
             </dict>
-            <key>role/soldier_tribe/skill/skill_2.png</key>
+            <key>skills/skill10/icon.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{786,544},{81,72}}</string>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill11/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill12/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill13/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill14/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill15/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill2/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill3/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill4/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill5/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill6/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill7/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill8/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{81,72}}</string>
+                <key>sourceSize</key>
+                <string>{81,72}</string>
+            </dict>
+            <key>skills/skill9/icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{333,1010},{81,72}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -566,7 +3244,7 @@
             <key>ui_blood.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{991,156},{79,14}}</string>
+                <string>{{506,414},{79,14}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -579,20 +3257,33 @@
             <key>ui_power.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{964,104},{26,30}}</string>
+                <string>{{506,380},{30,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{26,30}}</string>
+                <string>{{0,0},{30,32}}</string>
                 <key>sourceSize</key>
-                <string>{26,30}</string>
+                <string>{30,32}</string>
+            </dict>
+            <key>ui_poweroff.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{880,120},{30,32}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{30,32}}</string>
+                <key>sourceSize</key>
+                <string>{30,32}</string>
             </dict>
             <key>ui_skill.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{869,544},{75,66}}</string>
+                <string>{{333,1084},{75,66}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -605,7 +3296,7 @@
             <key>ui_skill_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{703,544},{81,72}}</string>
+                <string>{{656,994},{81,72}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -618,7 +3309,7 @@
             <key>ui_tips.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{506,886},{502,95}}</string>
+                <string>{{2,477},{502,95}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -631,7 +3322,7 @@
             <key>ui_tips_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,886},{502,95}}</string>
+                <string>{{2,380},{502,95}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -649,9 +3340,9 @@
             <key>realTextureFileName</key>
             <string>warChess.png</string>
             <key>size</key>
-            <string>{1024,1024}</string>
+            <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:febc18ad361071abf9e1758aacb66e2d:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:4229d47c04acba084107c30b44fcacbc:1/1$</string>
             <key>textureFileName</key>
             <string>warChess.png</string>
         </dict>

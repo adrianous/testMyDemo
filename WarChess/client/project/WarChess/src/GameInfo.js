@@ -2,9 +2,7 @@
  * Created by yangyanfei on 16/1/1.
  */
 
-var GM_INFO = {
-    mapIndex:1
-};
+
 
 var ROLETYPE = {
     MT:1,
@@ -27,18 +25,31 @@ var TEAMTYPE = {
     TRIBE:2//部落
 };
 
-var STATETYPE = {
+var ROLESTATE = {
+    SLEEP:0,
     AWAIT:1,
     MOVED:2,
-    SLEEP:3
+    ATTACKED:3,
+    RELEASING:4,
+    CANBEATTACKED:5
 };
 
-var BUTTONTYPE = {
+var BUTTONSTATE = {
+    DISABLE:0,
     AWAIT:1,
     CANMOVE:2,
     CANATTACK:3
 };
 
+var GAMETYPE = {
+    FREE:1,
+    BUSY:2
+};
+
+var GM_INFO = {
+    mapIndex:1,
+    state:GAMETYPE.FREE
+};
 
 
 var SF_INFO = {
@@ -48,6 +59,16 @@ var SF_INFO = {
     teamIndex:TEAMTYPE.ALLIANCE,//1:联盟
     teamLayout:null,
     power:10,
+    isMyTurn:false,
+    turnBegain:function(){
+        this.power = 10;
+        this.isMyTurn = true;
+
+    },
+    turnEnd:function(){
+        this.isMyTurn = false;
+
+    },
     initLayout:function(){
 
         if(this.teamIndex == TEAMTYPE.TRIBE){
@@ -70,8 +91,8 @@ var SF_INFO = {
             this.teamLayout.push(layout7);
         }else{
             var layout1 = new LayoutInfo(ROLETYPE.ANYENAN,1);
-            var layout2 = new LayoutInfo(ROLETYPE.LUOYAN,3);
-            var layout3 = new LayoutInfo(ROLETYPE.DAXIAOJIE,5);
+            var layout2 = new LayoutInfo(ROLETYPE.DAXIAOJIE,3);
+            var layout3 = new LayoutInfo(ROLETYPE.LUOYAN,5);
             var layout4 = new LayoutInfo(ROLETYPE.AIZILIEREN,7);
             var layout5 = new LayoutInfo(ROLETYPE.FANGZHUAN,9);
 
@@ -99,7 +120,18 @@ var OP_INFO = {
     nickname:"瓦塔西瓦",
     teamIndex:TEAMTYPE.TRIBE,//1:部落
     teamLayout:null,
+    isMyTurn:false,
     power:10,
+
+    turnBegain:function(){
+        this.power = 10;
+        this.isMyTurn = true;
+
+    },
+    turnEnd:function(){
+        this.isMyTurn = false;
+
+    },
     initLayout:function(){
         if(this.teamIndex == TEAMTYPE.TRIBE){
             var layout1 = new LayoutInfo(ROLETYPE.MT,43);
@@ -121,8 +153,8 @@ var OP_INFO = {
             this.teamLayout.push(layout7);
         }else{
             var layout1 = new LayoutInfo(ROLETYPE.ANYENAN,1);
-            var layout2 = new LayoutInfo(ROLETYPE.LUOYAN,3);
-            var layout3 = new LayoutInfo(ROLETYPE.DAXIAOJIE,5);
+            var layout2 = new LayoutInfo(ROLETYPE.DAXIAOJIE,3);
+            var layout3 = new LayoutInfo(ROLETYPE.LUOYAN,5);
             var layout4 = new LayoutInfo(ROLETYPE.AIZILIEREN,7);
             var layout5 = new LayoutInfo(ROLETYPE.FANGZHUAN,9);
 
@@ -148,3 +180,27 @@ function LayoutInfo(roleType,tag)
     this.roleType = roleType;
     this.tag = tag;
 }
+
+var GAME_TOOLS = {
+    getHead:function(sp)
+    {
+        var radius = 48;
+        //if(isResult)radius = 48;
+        sp.setScaleX(radius*2/sp.getContentSize().width);
+        sp.setScaleY(radius*2/sp.getContentSize().height);
+        var testStencil = cc.DrawNode.create();
+        var nCount = 200;
+        var circleArray = [];
+        var angel = 2.0 * Math.PI/nCount;
+        for(var i = 0 ; i< 200 ; i++)
+        {
+            var radian = i * angel;
+            circleArray.push(cc.p(radius * Math.cos(radian),radius * Math.sin(radian)))
+        }
+        testStencil.drawPoly(circleArray,nCount,cc.RED,0,cc.RED);
+        var clipper = new cc.ClippingNode(testStencil);
+
+        clipper.addChild(sp);
+        return clipper;
+    }
+};
