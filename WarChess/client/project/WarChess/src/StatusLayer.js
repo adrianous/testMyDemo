@@ -19,6 +19,7 @@ var StatusLayer = BaseLayer.extend({
         //    this.removeFromParent();
         //}
     },
+
     showRoleStatus:function()
     {
         var isShow = false;

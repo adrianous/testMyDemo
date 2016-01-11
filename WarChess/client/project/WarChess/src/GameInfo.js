@@ -54,12 +54,14 @@ var GM_INFO = {
 
 var SF_INFO = {
     userId:"",
-    iconUrl:"",
-    nickname:"瓦塔西瓦",
+    iconUrl:"http://7xjxba.com1.z0.glb.clouddn.com/14358229262529?e=1751182930&token=bz2giEcTM9os8itpIhHdGYMjBQHeaS1dkxEqLWu4:BbZGTXWyJ4GyCetpt28UbymZ384=",
+    nickname:"teset1",
     teamIndex:TEAMTYPE.ALLIANCE,//1:联盟
     teamLayout:null,
     power:10,
     isMyTurn:false,
+    isExit:false,
+
     turnBegain:function(){
         this.power = 10;
         this.isMyTurn = true;
@@ -116,12 +118,13 @@ var SF_INFO = {
 
 var OP_INFO = {
     userId:"",
-    iconUrl:"",
+    iconUrl:"http://7xjxba.com1.z0.glb.clouddn.com/14358229262529?e=1751182930&token=bz2giEcTM9os8itpIhHdGYMjBQHeaS1dkxEqLWu4:BbZGTXWyJ4GyCetpt28UbymZ384=",
     nickname:"瓦塔西瓦",
     teamIndex:TEAMTYPE.TRIBE,//1:部落
     teamLayout:null,
     isMyTurn:false,
     power:10,
+    isExit:false,
 
     turnBegain:function(){
         this.power = 10;
@@ -184,7 +187,7 @@ function LayoutInfo(roleType,tag)
 var GAME_TOOLS = {
     getHead:function(sp)
     {
-        var radius = 48;
+        var radius = 42;
         //if(isResult)radius = 48;
         sp.setScaleX(radius*2/sp.getContentSize().width);
         sp.setScaleY(radius*2/sp.getContentSize().height);

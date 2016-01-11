@@ -7,7 +7,7 @@ var RequestMsgId = {
 
     msgId_enter:12,
     msgId_chooseCard : 101,
-    msgId_emoji : 102,
+    msgId_joker : 102,
     msgId_refight : 103,
     msgId_endRound : 104,
     msgId_move : 105,
@@ -24,7 +24,7 @@ var Response = {
     msgId_playersInfo : 12,
     msgId_start : 205,
     msgId_chooseCard : 206,
-    msgId_emoji : 207,
+    msgId_joker : 207,
     msgId_result : 208,
     msgId_refight : 209,
     msgId_oneExit : 210,
@@ -59,10 +59,9 @@ var ChooseCard = function(){
 };
 
 //表情
-var EmojiMsg = function(){
+var JokerMsg = function(){
     this.msgId=RequestMsgId.msgId_emoji;
     this.content={
-
         index : 0
     }
 };

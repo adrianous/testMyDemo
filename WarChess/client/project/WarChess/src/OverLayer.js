@@ -21,11 +21,12 @@ var OverLayer = BaseLayer.extend({
 
     _myNode:null,
     _opNode:null,
+    _dialogLayer:null,
 
     ctor:function(){
         this._super();
         this.loadCCB("OverLayer",res_gaming.OverLayer);
-        //cc.spriteFrameCache.addSpriteFrames(res_image.Emoji_plist);
+        cc.spriteFrameCache.addSpriteFrames(res_gaming.emojiPlist);
 
         this._width = cc.director.getWinSize().width;
         this._height = cc.director.getWinSize().height;
@@ -69,69 +70,93 @@ var OverLayer = BaseLayer.extend({
     onDidLoadFromCCB:function(ccbFileName){
         //this._rtAction = new ActionLayer();
         //this.op_head_bg.addChild(this._rtAction,1000);
-        this.initInfo();
         //this.rootNode.animationManager.runAnimationsForSequenceNamed("action_head");
     },
 
     onEnter:function(){
         this._super();
-        cc.eventManager.addCustomListener(Response.msgId_again,this.receiveAgainMsg.bind(this));
-        cc.eventManager.addCustomListener(Response.msgId_tiaoxi,this.receiveTiaoxiMsg.bind(this));
+        this.initInfo();
+
+        cc.eventManager.addCustomListener(Response.msgId_refight,this.receiveAgainMsg.bind(this));
+        cc.eventManager.addCustomListener(Response.msgId_joker,this.receiveTiaoxiMsg.bind(this));
     },
     onExit:function(){
         this._super();
-        cc.eventManager.removeCustomListeners(Response.msgId_again);
-        cc.eventManager.removeCustomListeners(Response.msgId_tiaoxi);
+        cc.eventManager.removeCustomListeners(Response.msgId_refight);
+        cc.eventManager.removeCustomListeners(Response.msgId_joker);
     },
 
     initInfo:function(){
-        //if(GAME_OP_PLAYER.isExit){
-        //    GAME_OP_PLAYER.score = 0;
-        //    this._result = 1;
-        //
-        //    //this.again.setVisible(false);
-        //    //this.tiaoxi.setVisible(false);
-        //    //this.op_leave.setVisible(true);
-        //    //this.op_ready.setVisible(false);
-        //
-        //}else{
-        //    this.schedule(this.updateExit);
-        //
-        //    //if(GAME_SF_PLAYER.score > GAME_OP_PLAYER.score){
-        //    //    this._result = 1;
-        //    //
-        //    //    this.score_up.setString(GAME_SF_PLAYER.score);
-        //    //    this.score_down.setString(GAME_OP_PLAYER.score);
-        //    //}else {
-        //    //    this._result = 2;
-        //    //    this.score_up.setString(GAME_OP_PLAYER.score);
-        //    //    this.score_down.setString(GAME_SF_PLAYER.score);
-        //    //    this.tiaoxi.setVisible(false);
-        //    //}
-        //®
-        //}
-        //
-        //
-        //
+        this._dialogLayer = new DialogLayer ();
+        this.addChild(this._dialogLayer);
+        //this._dialogLayer.playLeave();
+        if(OP_INFO.isExit){
+            //GAME_OP_PLAYER.score = 0;
+            this._result = 1;
+
+            this.again.setVisible(false);
+            this.jokerBtn.setVisible(false);
+            this._opNode.getChildByTag(3).setVisible(true);
+            this._opNode.getChildByTag(4).setVisible(false);
+            this._dialogLayer.playLeave();
+
+        }else{
+            this.schedule(this.updateExit);
+            if(this._result == 1)
+            {
+                this.jokerBtn.setVisible(true);
+            }
+            else
+            {
+                this.jokerBtn.setVisible(false);
+                this.again.setPosition(cc.p(0,-20));
+            }
+
+        }
+
+
+
         ////设置头像
 
         cc.loader.loadImg(SF_INFO.iconUrl, function(err,img){
             var sprite  = new cc.Sprite(img);
             var head = GAME_TOOLS.getHead(sprite);
             //head.setPosition(this.sf_head_pos.getPosition());
-            this._myNode.getChildByTag(2).addChild(head);
+            this._myNode.getChildByTag(1).addChild(head);
+            //head.setLocalZOrder(98);
+            //this._myNode.addChild(head);
+            head.setPosition(cc.p(42,42));
         }.bind(this));
 
-        //cc.loader.loadImg(GAME_OP_PLAYER.iconUrl, function(err,img){
-        //    var sprite  = new cc.Sprite(img);
-        //    var head = GAME_TOOLS.getHead(sprite,false);
-        //    //head.setPosition(this.op_head_pos.getPosition());
-        //    this.op_head_pos.addChild(head);
-        //}.bind(this));
-        //
-        //
-        //this.sf_name.setString(GAME_SF_PLAYER.nickname);
-        //this.op_name.setString(GAME_OP_PLAYER.nickname);
+        cc.loader.loadImg(OP_INFO.iconUrl, function(err,img){
+            var sprite  = new cc.Sprite(img);
+            var head = GAME_TOOLS.getHead(sprite);
+            this._opNode.getChildByTag(1).addChild(head);
+            //head.setLocalZOrder(98);
+            //this._myNode.addChild(head);
+            head.setPosition(cc.p(42,42));
+        }.bind(this));
+
+        this._myNode.getChildByTag(2).setString(SF_INFO.nickname);
+        this._opNode.getChildByTag(2).setString(OP_INFO.nickname);
+    },
+
+
+    playWin:function()
+    {
+        this._result = 1;
+        this.rootNode.animationManager.runAnimationsForSequenceNamed("moveHead");
+    },
+
+    playLose:function()
+    {
+        this._result = 2;
+        this.rootNode.animationManager.runAnimationsForSequenceNamed("moveHead");
+    },
+
+    playOneExit:function()
+    {
+
     },
 
 
@@ -146,12 +171,15 @@ var OverLayer = BaseLayer.extend({
 
     onAgainPress:function(){
         this.again.setEnabled(false);
-        this.sf_ready.setVisible(true);
+        this._myNode.getChildByTag(4).setVisible(true);
+        this._myNode.getChildByTag(4).setLocalZOrder(100);
         this.sendAgainMsg();
     },
+
     onTiaoxiPress:function(){
         this.sendTiaoxiMsg();
     },
+
     updateStar:function(){
         var star = new cc.Sprite("#ui_star.png");
         star.x = Math.random() * 270 + 350;
@@ -167,16 +195,16 @@ var OverLayer = BaseLayer.extend({
         }.bind(this));
         star.runAction(new cc.Sequence(act1,act2,act3,act4));
         this.addChild(star,10000);
-
     },
+
     updateExit:function(){
-        if(GAME_OP_PLAYER.isExit){
+        if(OP_INFO.isExit){
             this.unschedule(this.updateExit);
             this.again.setVisible(false);
-            this.tiaoxi.setVisible(false);
-            this.op_leave.setVisible(true);
-            this.op_ready.setVisible(false);
-            this._rtAction.playExit();
+            this.jokerBtn.setVisible(false);
+            this._opNode.getChildByTag(3).setVisible(true);
+            this._opNode.getChildByTag(4).setVisible(false);
+            this._dialogLayer.playLeave();
         }
 
     },
@@ -209,7 +237,6 @@ var OverLayer = BaseLayer.extend({
                 toPos.y = this._spHeight*0.5;
             }
             var time = cc.pDistance(this._tiaoxiSp.getPosition(), toPos)/this._speed;
-
             this._tiaoxiSp.runAction(new cc.MoveTo(time,toPos));
 
 
@@ -220,13 +247,14 @@ var OverLayer = BaseLayer.extend({
         }
     },
     receiveAgainMsg:function(event){
-        this.op_ready.setVisible(true);
+        this._opNode.getChildByTag(4).setVisible(true);
+        this._dialogLayer.playRefight();
         this._rtAction.playReady();
     },
     receiveTiaoxiMsg:function(event){
         var jsonData = event.getUserData();
         var index = jsonData.index;
-        cc.audioEngine.playEffect(res_image.effect_tiaoxi);
+        //cc.audioEngine.playEffect(res_image.effect_tiaoxi);
         if(this._tiaoxiSp == null){
             this._tiaoxiSp = new cc.Sprite("#tiaoxi_" + index + ".png");
             this._tiaoxiSp.setPosition(this.op_head_bg.convertToWorldSpace(this.op_ready.getPosition()));//
@@ -243,25 +271,26 @@ var OverLayer = BaseLayer.extend({
 
         //处理
     },
-    sendAgainMsg:function(){
-        var againMsg = new AgainMsg();
+
+    sendAgainMsg:function()
+    {
+        var againMsg = new RefightMsg();
         global_network.sendMessage(againMsg);
     },
+
     sendTiaoxiMsg:function(){
-        var tiaoxiMsg = new TiaoxiMsg();
+        var tiaoxiMsg = new JokerMsg();
         var index = Math.floor(Math.random()*10)%4 + 1;
         tiaoxiMsg.content.index = index;
         global_network.sendMessage(tiaoxiMsg);
 
-
         var sp = new cc.Sprite("#tiaoxi_" + index + ".png");
-        var width = this.op_leave.getContentSize().width;
-        sp.setScale(width/sp.getContentSize().width);
-        sp.setPosition(this.tiaoxi.getParent().convertToWorldSpace(this.tiaoxi.getPosition()));
+        var width = this._opNode.getChildByTag(3).getContentSize().width;
+        sp.setScale((width/sp.getContentSize().width)*this._opNode.getScale());
+        sp.setPosition(this.jokerBtn.getParent().convertToWorldSpace(this.jokerBtn.getPosition()));
         this.addChild(sp,1111);
 
-
-        var toPos = this.op_head_bg.convertToWorldSpace(this.op_ready.getPosition());//
+        var toPos = this._opNode.convertToWorldSpace(this._opNode.getChildByTag(3).getPosition());//
 
         var act1 = new cc.MoveTo(0.3,toPos);
 

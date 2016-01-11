@@ -2,6 +2,8 @@ var res_gaming = {
     map_1 : "res/test.tmx",
     warChessPlist : "res/warChess.plist",
     warChessPng : "res/warChess.png",
+    emojiPlist: "res/emoji.plist",
+    emojiPng: "res/emoji.png",
     chooseCard : "res/ChooseCard.ccbi",
     mt:"res/mt.png",
     menu_plist:"res/menu.plist",
@@ -28,7 +30,8 @@ var res_gaming = {
     PointsLayerAlliance :"res/PointsLayerAlliance.ccbi",
     PointsLayerTribe :"res/PointsLayerTribe.ccbi",
     OverLayer:"res/OverLayer.ccbi",
-    damageShow:"res/DamageShow.ccbi"
+    damageShow:"res/DamageShow.ccbi",
+    dialogLayer:"res/DialogLayer.ccbi"
 
 };
 

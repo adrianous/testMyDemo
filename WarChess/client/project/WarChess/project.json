@@ -30,6 +30,7 @@
         "src/PointShow.js",
         "src/PointsShowLayer.js",
         "src/DamageShowLayer.js",
-        "src/OverLayer.js"
+        "src/OverLayer.js",
+        "src/DialogLayer.js"
     ]
 }

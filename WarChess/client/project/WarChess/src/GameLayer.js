@@ -10,7 +10,6 @@ var GameLayer = BaseLayer.extend({
     ctor:function(){
         this._super();
 
-
         cc.spriteFrameCache.addSpriteFrames(res_gaming.warChessPlist);
 
         this._statusLayer = new StatusLayer();
@@ -19,14 +18,11 @@ var GameLayer = BaseLayer.extend({
         this._mainGameLayer.addChild(this._statusLayer);
 
         this._overLayer = new OverLayer();
-
         this.addChild(this._overLayer);
+        //this._overLayer.playWin();
 
-
-
-        var testChooseCardLayer = new ChooseCardLayer();
-        this.addChild(testChooseCardLayer);
-
+        //var testChooseCardLayer = new ChooseCardLayer();
+        //this.addChild(testChooseCardLayer);
 
         cc.eventManager.addCustomListener(Response.msgId_endRound,this.receiveEndRound.bind(this));
         cc.eventManager.addCustomListener(Response.msgId_startRound,this.receiveStartRound.bind(this));

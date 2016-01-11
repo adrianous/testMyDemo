@@ -75,7 +75,7 @@ var LoadingLayer = BaseLayer.extend({
         var jsonObj = null;
         var isTest = true;
         if(isTest){
-            var str = '{"roomId":"room_1","gameId":"WARCHESS_DEBUG","userId":"userId1","sessionKey":1,"gameServerIP":"ws://192.168.0.203:10151"}';
+            var str = '{"roomId":"room_1","gameId":"WARCHESS_DEBUG","userId":"userId1","sessionKey":1,"gameServerIP":"ws://192.168.0.105:10151"}';
             jsonObj = JSON.parse(str);
         }else
         {
